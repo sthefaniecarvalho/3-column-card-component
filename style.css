@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    min-height: 120vh;
+   
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    padding: 4rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 450px;
+    padding: 2.5rem;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.image {
+    text-align: left;
+    margin-bottom: 2rem;
+    width: 60px;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: left;
+    line-height: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 150px;
+    cursor: pointer;
+}
+
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 700px) {
+
+    body {
+        min-height: 260vh;
+    }
+    .container {
+        flex-direction: column;
+    }
+    
+    .box {
+        height: 400px;
+    }
+
+    .sedan {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+    }
+
+    .luxury {
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+
+}
+
+.attribution { 
+    margin-top: 0.1rem;
+    font-size: 14px; 
+    text-align: center;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
